@@ -1,0 +1,35 @@
+{% extends 'layout.html' %}{% load static %}
+
+{% block main %}
+        <div class="busi">
+            <h1>Hey there, I'm Andrew Johnson and welcome to my Blog</h1>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsam autem quis temporibus, adipisci tempore dolor. Lorem ipsum dolor sit amet consectetur adipisicing elit. Possimus quaerat eius consequatur voluptas numquam sequi autem quasi nostrum accusamus ut.</p>
+        </div>
+        <div class="bell">
+            <h1 class="bell1">My Posts</h1>
+            <hr>
+            <div class="allPost">
+                <div class="epost">
+                    <div class="imgs">
+                        <img src="{% static 'images/Eggforest.jpg' %}" alt="Oasis" width="100%" height="250px">
+                    </div>
+                    <div class="tart">
+                        <h3>BUSINESS</h3>
+                        <h1>Font sizes in UI design: The complete guide to follow</h1>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Impedit voluptatibus asperiores voluptates nesciunt nobis ipsum optio! Voluptatem veniam molestias, non autem quas nihil minus laudantium repellat quasi quaerat eaque quia mollitia aspernatur. Fuga, consectetur exercitationem in ut labore quos debitis!</p>
+                    </div>
+                </div>
+                <div class="epost">
+                    <div class="imgs">
+                        <img src="{% static 'images/Eggtree.jpg' %}" alt="Oasis" width="100%" height="250px">
+                    </div>
+                    <div class="tart">
+                        <h3>BUSINESS</h3>
+                        <h1>Font sizes in UI design: The complete guide to follow</h1>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Impedit voluptatibus asperiores voluptates nesciunt nobis ipsum optio! Voluptatem veniam molestias, non autem quas nihil minus laudantium repellat quasi quaerat eaque quia mollitia aspernatur. Fuga, consectetur exercitationem in ut labore quos debitis!</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+{% endblock main %}

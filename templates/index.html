@@ -1,0 +1,190 @@
+{% extends 'layout.html' %}
+
+{% block main %}
+    <header>
+        <div class="title">
+            <p>POSTED ON <b>STARTUP</b></p>
+            <h1>Step-by-step guide to choosing great font pairs</h1>
+            <p>By <span>James West</span> | May 23, 2022</p>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nisi cumque temporibus dolore!Quos ut quisquam perferendis? Velit rem excepturi modi iste saepe, ipsa aperiam reiciendis?          </p>
+            <button class="read-btn"><a href="{% url 'about' %}">Read More ></a></button>
+            </div>
+    </header>
+    <div class="post">
+        <div class="featured">
+            <h1>Featured Post</h1>
+            <div class="john">
+                <img src="static/images/Glassapple.jpg" alt="beauty" width="100%" height="250px">
+                <p>By <span>John Doe</span> | May 23, 2022</p>
+                <h2>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ut omnis consectetur quod.</h2>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Perspiciatis sint id reiciendis aliquam adipisci sapiente repudiandae ad, dolorum accusantium sequi quas alias, quidem neque vel natus omnis, vitae blanditiis provident.</p>
+                <button class="read-btn"><a href="{% url 'blogHome' %}">Read More ></a></button>
+            </div>
+        </div>
+        <div class="all">
+            <h1>All Posts</h1><a href="{% url 'font' %}">view all</a>
+            <div class="figma">
+                <div class="doe">
+                    <p>By <span>John Doe</span> | Aug 23, 2021</p>
+                    <p><b>8 Figma design systems that you can download for free today</b></p>
+                </div>
+                <div class="doe" id="doe1">
+                    <p>By <span>John Doe</span> | Aug 23, 2021</p>
+                    <p><b>8 Figma design systems that you can download for free today</b></p>
+                </div>
+                <div class="doe">
+                    <p>By <span>John Doe</span> | Aug 23, 2021</p>
+                    <p><b>8 Figma design systems that you can download for free today</b></p>
+                </div>
+                <div class="doe">
+                    <p>By <span>John Doe</span> | Aug 23, 2021</p>
+                    <p><b>8 Figma design systems that you can download for free today</b></p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="violet">
+        <div class="about">
+            <p>ABOUT US</p>
+            <h2>We are a community of content writers who share their learnings</h2>
+            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Maiores totam mollitia maxime iure. Quisquam iste quasi eveniet, et omnis dignissimos.</p>
+            <a href="{% url 'about' %}">Read More></a>
+        </div>
+        <div class="mission">
+            <p>OUR MISSION</p>
+            <h2>Creating valueable content for creatives all around the world<h2>
+            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Accusantium porro placeat dolore. Maiores nihil, quod iusto molestias at amet debitis doloribus magnam, enim minus ipsum odio natus aut dolore, quisquam exercitationem? Quae ducimus voluptas dolorem aperiam, suscipit vero corporis ullam.</p>
+        </div>
+    </div>
+    <div class="cart-car">
+            <h2 class="choo">Choose A Category</h2>
+            <div class="cart">
+                <div class="card">
+                    <div>&#9978;</div>
+                    <h2>Business</h2>
+                    <p><a href="{% url 'business' %}" class="alal">Lorem ipsum dolor sit amet consectetur adipisicing elit. Eaque quibusdaalm voluptas error, iusto ut commodi laboriosam facilis.</a></p>
+                </div>
+                <div class="card" id="card2">
+                    <div>&#9997;</div>
+                    <h2>Startup</h2>
+                    <p><a href="{% url 'business' %}" class="alal">Lorem ipsum dolor sit amet consectetur adipisicing elit. Eaque quibusdam voluptas error, iusto ut commodi laboriosam facilis.</a></p>
+                </div>
+                <div class="card">
+                    <div>&#9970;</div>
+                    <h2>Economy</h2>
+                    <p><a href="{% url 'business' %}" class="alal">Lorem ipsum dolor sit amet consectetur adipisicing elit. Eaque quibusdam voluptas error, iusto ut commodi laboriosam facilis.</a></p>
+                </div>
+                <div class="card">
+                    <div>&#8986;</div>
+                    <h2>Technolgy</h2>
+                    <p><a href="{% url 'business' %}" class="alal">Lorem ipsum dolor sit amet consectetur adipisicing elit. Eaque quibusdam voluptas error, iusto ut commodi laboriosam facilis.</a></p>
+                </div>
+            </div>
+        </div>
+        <section class="abosec">
+            <div class="well">
+                <img src="static/images/Triplet.jpg" alt="love">
+            </div>
+            <div class="why">
+                <p class="smah">WHY WE STARTED</p>
+                <h2>It started out as a simple idea and evolved into our passion</h2>
+                <p class="des">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nesciunt quis, explicabo, neque soluta incidunt repudiandae asperiores quae natus laboriosam accusantium vel obcaecati, ab ipsa. Nesciunt doloribus in qui culpa enim.</p>
+                <button class="read-btn"><a href="{% url 'about' %}">Discover our story ></a></button>
+            </div>
+            
+        </section>
+    
+        <div class="authors">
+            <h1 class="list">List of Authors</h1>
+            <div class="auth">
+                <div class="auth-item"><a href="{% url 'post' %}">
+                    <img src="static/images/Beautybutter.jpg" alt="girl" width="150" height="150">
+                    <h1>Floyd Miles</h1>
+                    <p>Content Writer @Company</p>
+                    <div class="social-icons">
+                        <a href="#"><i class="fab fa-facebook"></i></a>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                        <a href="#"><i class="fab fa-linkedin"></i></a>
+                    </div></a>
+                    <!-- <div>&#9824; &#9827; &#9829; &#9830;</div> -->
+                </div>
+                <div class="auth-item" id="auth-item2"><a href="{% url 'post' %}">
+                    <img src="static/images/Booklove.jpg" alt="girl" width="150" height="150">
+                    <h1>Dianne Russell</h1>
+                    <p>Content Writer @Company</p>
+                    <div class="social-icons">
+                        <a href="#"><i class="fab fa-facebook"></i></a>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                        <a href="#"><i class="fab fa-linkedin"></i></a>
+                    </div></a>
+                    <!-- <div>&#9824; &#9827; &#9829; &#9830;</div> -->
+                </div>
+                <div class="auth-item"><a href="{% url 'post' %}">
+                    <img src="static/images/Diva.jpg" alt="girl" width="150" height="150">
+                    <h1>jenny Wilson</h1>
+                    <p>Content Writer @Company</p>
+                    <div class="social-icons">
+                        <a href="#"><i class="fab fa-facebook"></i></a>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                        <a href="#"><i class="fab fa-linkedin"></i></a>
+                    </div></a>
+                    <!-- <div>&#9824; &#9827; &#9829; &#9830;</div> -->
+                </div>
+                <div class="auth-item"><a href="{% url 'post' %}">
+                    <img src="static/images/Crystalfly.jpg" alt="girl" width="150" height="150">
+                    <h1>Leslie Alexander</h1>
+                    <p>Content Writer @Company</p>
+                    <div class="social-icons">
+                        <a href="#"><i class="fab fa-facebook"></i></a>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                        <a href="#"><i class="fab fa-linkedin"></i></a>
+                    </div></a>
+                    <!-- <div>&#9824; &#9827; &#9829; &#9830;</div> -->
+                </div>
+            </div>
+        </div>
+        <div class="logi">
+            <p class="logp"><sub>We are</sub></p>
+            <div class="log">
+                <p id="fea">Featured in</p>
+                <p>&#9982; logoipsum</p>
+                <p>&#9976; logoipsum</p>
+                <p>&#9899; logoipsum</p>
+                <p>&#9810; logoipsum</p>
+                <p>&#9983; logoipsum</p>
+            </div>
+        </div>
+        <div class="test-con">
+            <div class="test-left">
+                <h1>TESTIMONIALS</h1>
+                <h3>What people say about our blog</h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Facere nulla animi velit repellendus neque eum!</p>
+            </div>
+            <hr>
+            <div class="test-right">
+                <p class="test-text"><strong>Lorem ipsum dolor sit amet consectetur adipisicing elit. Hic cupiditate distinctio dignissimos unde enim officiis minus fugit a similique soluta accusamus possimus vero sed vel amet tenetur, laudantium provident illum.</strong></p>
+                <div class="auth-info">
+                    <img src="static/images/Magicsky.jpg" alt="User photo">
+                    <div>
+                       <p><strong>Jonathan Vallem</strong></p>
+                       <p class="loca">New York, USA</p>
+                    </div>
+                </div>
+                <div class="nav-dots">
+                    <span class="dot white">&#9754;</span>
+                    <span class="dot dark">&#9755;</span>
+                </div>
+            </div>
+        </div>
+        <div class="join">
+            <p><strong>Join our team to be a part of our story</strong></p>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Labore autem necessitatibus, veritatis ullam nihil quia</p>
+            <button class="read-btn"><a href="{% url 'contact' %}">Join Now</a></button>
+        </div>
+
+{% endblock main %}

@@ -1,0 +1,111 @@
+{% extends 'layout.html' %}{% load static %}
+
+{% block main %}
+        <div class="fstep">
+            <div class="step">
+                <h3>FEATURED POST</h3>
+                <h1>Step-by-step guide to choosing great font pairs</h1>
+                <p>By <span>John Doe</span> | May 23, 2022</p>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nisi cumque temporibus dolore!Quos ut quisquam perferendis? Velit rem excepturi modi iste saepe, ipsa aperiam reiciendis?          </p>
+                <button class="read-btn"><a href="{% url 'font' %}">Read More ></a></button>
+            </div>
+            <div class="pic">
+                <img src="{% static 'images/Oasis.jpg' %}" alt="A man" width="100%" height="300px">
+            </div>
+        </div>
+        <div class="bell">
+            <h1 class="bell1">All posts</h1>
+            <hr>
+            <div class="allPost">
+                <div class="epost">
+                    <div class="imgs">
+                        <img src="{% static 'images/Rainbowpalm.jpg' %}" alt="Oasis" width="100%" height="250px">
+                    </div>
+                    <div class="tart">
+                        <h3>STARTUP</h3>
+                        <h1>Design tips for designers that cover everything you need</h1>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Impedit voluptatibus asperiores voluptates nesciunt nobis ipsum optio! Voluptatem veniam molestias, non autem quas nihil minus laudantium repellat quasi quaerat eaque quia mollitia aspernatur. Fuga, consectetur exercitationem in ut labore quos debitis!</p>
+                    </div>
+                </div>
+                <div class="epost">
+                    <div class="imgs">
+                        <img src="{% static 'images/Mysticfall.jpg' %}" alt="Oasis" width="100%" height="250px">
+                    </div>
+                    <div class="tart">
+                        <h3>BUSINESS</h3>
+                        <h1>How to build rapport with your web design clients</h1>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Impedit voluptatibus asperiores voluptates nesciunt nobis ipsum optio! Voluptatem veniam molestias, non autem quas nihil minus laudantium repellat quasi quaerat eaque quia mollitia aspernatur. Fuga, consectetur exercitationem in ut labore quos debitis!</p>
+                    </div>
+                </div>
+                <div class="epost">
+                    <div class="imgs">
+                        <img src="{% static 'images/Moonshine.jpg' %}" alt="Oasis" width="100%" height="250px">
+                    </div>
+                    <div class="tart">
+                        <h3>STARTUP</h3>
+                        <h1>Logo design trends to avoid in 2022</h1>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Impedit voluptatibus asperiores voluptates nesciunt nobis ipsum optio! Voluptatem veniam molestias, non autem quas nihil minus laudantium repellat quasi quaerat eaque quia mollitia aspernatur. Fuga, consectetur exercitationem in ut labore quos debitis!</p>
+                    </div>
+                </div>
+                <div class="epost">
+                    <div class="imgs">
+                        <img src="{% static 'images/Moonlightfall.jpg' %}" alt="Oasis" width="100%" height="250px">
+                    </div>
+                    <div class="tart">
+                        <h3>TECHNOLOGY</h3>
+                        <h1>8 Figma design systems you can download for free today</h1>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Impedit voluptatibus asperiores voluptates nesciunt nobis ipsum optio! Voluptatem veniam molestias, non autem quas nihil minus laudantium repellat quasi quaerat eaque quia mollitia aspernatur. Fuga, consectetur exercitationem in ut labore quos debitis!</p>
+                    </div>
+                </div>
+                <div class="epost">
+                    <div class="imgs">
+                        <img src="{% static 'images/Artistbrick.jpg' %}" alt="Oasis" width="100%" height="250px">
+                    </div>
+                    <div class="tart">
+                        <h3>ECONOMY</h3>
+                        <h1>Font sizes in UI design: The complete guide to follow</h1>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Impedit voluptatibus asperiores voluptates nesciunt nobis ipsum optio! Voluptatem veniam molestias, non autem quas nihil minus laudantium repellat quasi quaerat eaque quia mollitia aspernatur. Fuga, consectetur exercitationem in ut labore quos debitis!</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        {% for blog in blogs %}
+            <div class="tart">
+                <img src=" {{blog.image.url}}" alt="blog img" width="400px" height="400px" style="object-fit: cover;">
+                <h3>{{blog.title}}</h3>
+                <a href=" {% url 'blogDetails' pk=blog.id %}">Read More</a>
+            </div>
+    
+        {% endfor %}
+        <div class="cart-car">
+            <h1 class="choo">All Categories</h1>
+            <div class="cart">
+                <div class="card">
+                    <div>&#9978;</div>
+                    <h2>Business</h2>
+                    <p><a href="{% url 'business' %}">Lorem ipsum dolor sit amet consectetur adipisicing elit. Eaque quibusdam voluptas error, iusto ut commodi laboriosam facilis.</a></p>
+                </div>
+                <div class="card" id="card2">
+                    <div>&#9997;</div>
+                    <h2>Startup</h2>
+                    <p><a href="{% url 'business' %}">Lorem ipsum dolor sit amet consectetur adipisicing elit. Eaque quibusdam voluptas error, iusto ut commodi laboriosam facilis.</a></p>
+                </div>
+                <div class="card">
+                    <div>&#9970;</div>
+                    <h2>Economy</h2>
+                    <p><a href="{% url 'business' %}">Lorem ipsum dolor sit amet consectetur adipisicing elit. Eaque quibusdam voluptas error, iusto ut commodi laboriosam facilis.</a></p>
+                </div>
+                <div class="card">
+                    <div>&#8986;</div>
+                    <h2>Technolgy</h2>
+                    <p><a href="{% url 'business' %}">Lorem ipsum dolor sit amet consectetur adipisicing elit. Eaque quibusdam voluptas error, iusto ut commodi laboriosam facilis.</a></p>
+                </div>
+            </div>
+        </div>
+        <div class="join">
+            <p><strong>Join our team to be a part of our story</strong></p>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Labore autem necessitatibus, veritatis ullam nihil quia</p>
+            <button class="read-btn"><a href="{% url 'contact' %}">Join Now</a></button>
+        </div>
+
+{% endblock main %}
